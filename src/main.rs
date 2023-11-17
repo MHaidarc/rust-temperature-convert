@@ -26,7 +26,7 @@ fn main() {
                 Err(_) => continue,
             };
 
-            let output = calculate_celsius(input.into());
+            let output = calculate_celsius(input);
             println!("{input} fahrenheit in celsius is: {output}");
             break;
         } else if input == 2 {
@@ -42,7 +42,7 @@ fn main() {
                 Err(_) => continue,
             };
 
-            let output = calculate_fahrenheit(input.into());
+            let output = calculate_fahrenheit(input);
             println!("{input} celsius in fahrenheit is: {output}");
             break;
         } else {
